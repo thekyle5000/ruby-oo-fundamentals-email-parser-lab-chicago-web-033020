@@ -17,5 +17,5 @@ attr_accessor :emails
       @emails.split(" ").uniq
     end
   end
-binding.pry
+
 end
