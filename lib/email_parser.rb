@@ -17,6 +17,7 @@ attr_accessor :emails
         e.slice(0, (e.length -1))
       end
      end
+     binding.pry
     not_unique.uniq
  
    end
