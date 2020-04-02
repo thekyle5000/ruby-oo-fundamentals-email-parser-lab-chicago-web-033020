@@ -16,7 +16,7 @@ attr_accessor :emails
     
     email_array.each do |e|
       if e.include?(",")
-        e[]
+        e[-1]
     end
     
     # if @emails.include?(",")
