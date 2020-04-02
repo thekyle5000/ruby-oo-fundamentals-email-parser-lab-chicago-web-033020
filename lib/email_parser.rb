@@ -26,6 +26,7 @@ attr_accessor :emails
     
     
     x = @emails.split(" ",",")
+    binding.pry
     
     # if @emails.include?(",")
     #   @emails.split(", ").uniq
