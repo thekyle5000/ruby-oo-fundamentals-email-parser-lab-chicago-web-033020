@@ -24,6 +24,9 @@ attr_accessor :emails
     not_unique.uniq
    end
     
+    
+    @emails.split(" ",",")
+    
     # if @emails.include?(",")
     #   @emails.split(", ").uniq
     # else 
