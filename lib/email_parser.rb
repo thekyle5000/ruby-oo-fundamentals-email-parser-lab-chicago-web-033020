@@ -10,6 +10,9 @@ attr_accessor :emails
     @emails = emails
   end
   
+  def parse
+  @emails.split(/ |, |,/).uniq
+  end
   # def parse
   #   email_array = @emails.split(" ")
   #   not_unique = [] 
@@ -24,7 +27,7 @@ attr_accessor :emails
   #   not_unique.uniq
   # end
   
-    @emails.split(/ |, |,/).uniq
+  
     
     # x = @emails.split(" ",",")
     
