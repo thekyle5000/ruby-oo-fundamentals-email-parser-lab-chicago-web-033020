@@ -12,8 +12,7 @@ attr_accessor :emails
   
   def parse
     if
-      @emails.include?(" ")
-      @emails.split(",").uniq
+      @emails.include?(",").split(",").uniq
     else 
       @emails.split(" ").uniq
     end
