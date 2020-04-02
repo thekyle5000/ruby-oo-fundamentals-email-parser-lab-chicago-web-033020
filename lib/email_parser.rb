@@ -25,7 +25,7 @@ attr_accessor :emails
   # end
     
     
-    x = @emails.split(" ",",")
+    # x = @emails.split(" ",",")
     binding.pry
     
     # if @emails.include?(",")
