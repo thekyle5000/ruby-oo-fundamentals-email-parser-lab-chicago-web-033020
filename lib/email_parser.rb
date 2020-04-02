@@ -15,7 +15,8 @@ attr_accessor :emails
     not_unique = [] 
     email_array.each do |e|
       if e.include?(",")
-        not_unique << e.slice(0, (e.length -1))
+        a = e.length - 1 
+        not_unique << e.slice(0, a)
       else
         not_unique << e
       end
