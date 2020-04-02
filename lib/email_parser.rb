@@ -15,6 +15,7 @@ attr_accessor :emails
         e.slice(0, (e.length -1))
     end
     email_array.uniq
+    binding.pry
    end
     
     # if @emails.include?(",")
