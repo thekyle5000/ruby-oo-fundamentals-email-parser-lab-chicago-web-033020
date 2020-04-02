@@ -20,9 +20,7 @@ attr_accessor :emails
         not_unique << e
       end
      end
-     binding.pry
     not_unique.uniq
- 
    end
     
     # if @emails.include?(",")
