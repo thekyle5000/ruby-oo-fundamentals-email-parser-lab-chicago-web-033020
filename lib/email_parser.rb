@@ -12,10 +12,10 @@ attr_accessor :emails
   
   def parse
     email_array = @emails.split(" ")
-     binding.pry
     email_array.map do |e|
       if e.include?(",")
         e.slice(0, (e.length -1))
+        binding.pry
     end
   end
     email_array.uniq
