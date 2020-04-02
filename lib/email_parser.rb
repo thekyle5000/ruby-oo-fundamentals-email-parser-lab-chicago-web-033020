@@ -11,19 +11,16 @@ attr_accessor :emails
   end
   
   def parse
-    
-    email_array = @emails.split(" ")
-    
-    email_array.each do |e|
-      if e.include?(",")
-        e[-1]
+    email_array = email_array.map do |e|
+        e.slice(0, (e.length -1))
     end
+    email_array.uniq
+   end
     
     # if @emails.include?(",")
     #   @emails.split(", ").uniq
     # else 
     #   @emails.split(" ").uniq
     # end
-  end
 
 end
