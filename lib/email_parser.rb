@@ -24,7 +24,7 @@ attr_accessor :emails
   #   not_unique.uniq
   # end
   
-    @emails.split(/ |, |,/).uniq / |, |,/
+    @emails.split(/ |, |,/).uniq
     
     # x = @emails.split(" ",",")
     
