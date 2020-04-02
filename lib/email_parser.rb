@@ -17,6 +17,7 @@ attr_accessor :emails
       if e.include?(",")
         e.slice(0, (e.length -1))
     end
+  end
     email_array.uniq
  
    end
