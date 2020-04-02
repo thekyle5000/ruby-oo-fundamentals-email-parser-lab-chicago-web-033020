@@ -10,22 +10,22 @@ attr_accessor :emails
     @emails = emails
   end
   
-  def parse
-    email_array = @emails.split(" ")
-    not_unique = [] 
-    email_array.each do |e|
-      if e.include?(",")
-        a = e.length - 1 
-        not_unique << e.slice(0, a)
-      else
-        not_unique << e
-      end
-     end
-    not_unique.uniq
-   end
+  # def parse
+  #   email_array = @emails.split(" ")
+  #   not_unique = [] 
+  #   email_array.each do |e|
+  #     if e.include?(",")
+  #       a = e.length - 1 
+  #       not_unique << e.slice(0, a)
+  #     else
+  #       not_unique << e
+  #     end
+  #   end
+  #   not_unique.uniq
+  # end
     
     
-    @emails.split(" ",",")
+    x = @emails.split(" ",",")
     
     # if @emails.include?(",")
     #   @emails.split(", ").uniq
